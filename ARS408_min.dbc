@@ -1,0 +1,76 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_:
+
+
+BO_ 512 RadarCfg: 8 Vector__XXX
+ SG_ RadarCfg_StoreInNVM_valid : 7|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RadarCfg_StoreInNVM : 47|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RadarCfg_SortIndex_valid : 6|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RadarCfg_SortIndex : 44|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ RadarCfg_SensorID_valid : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RadarCfg_SensorID : 32|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ RadarCfg_SendQuality_valid : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RadarCfg_SendQuality : 42|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RadarCfg_SendExtInfo_valid : 5|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RadarCfg_SendExtInfo : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RadarCfg_RCS_Threshold_valid : 48|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RadarCfg_RCS_Threshold : 49|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ RadarCfg_RadarPower_valid : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RadarCfg_RadarPower : 37|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ RadarCfg_OutputType_valid : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RadarCfg_OutputType : 35|2@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ RadarCfg_MaxDistance_valid : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RadarCfg_MaxDistance : 15|10@0+ (2,0) [0|2046] "m" Vector__XXX
+ SG_ RadarCfg_CtrlRelay_valid : 40|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RadarCfg_CtrlRelay : 41|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1547 Object_1_General: 8 Vector__XXX
+ SG_ Object_VrelLong : 39|10@0- (0.25,-128) [-128|127.75] "m/s" Vector__XXX
+ SG_ Object_VrelLat : 45|9@0- (0.25,-64) [-64|63.75] "m/s" Vector__XXX
+ SG_ Object_RCS : 56|8@1- (0.5,-64) [-64|63.5] "dBm^2" Vector__XXX
+ SG_ Object_ID : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Object_DynProp : 48|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Object_DistLong : 15|13@0- (0.2,-500) [-500|1138.2] "m" Vector__XXX
+ SG_ Object_DistLat : 18|11@0- (0.2,-204.6) [-204.6|208.8] "m" Vector__XXX
+
+
+
+BA_DEF_  "MultiplexExtEnabled" ENUM  "No","Yes";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "MultiplexExtEnabled" "No";
+BA_DEF_DEF_  "BusType" "";
+
